@@ -50,7 +50,7 @@ Short description of my SailfishOS Application
 
 %install
 rm -rf %{buildroot}
-mkdir -p %{buildroot}/usr/share/%{name}
+mkdir -p %{buildroot}/usr/share/%{name}/ffmpeg_static
 %ifarch armv7hl
 echo "Include ffmpeg for armv7hl"
 cp ../harbour-encode/ffmpeg_static_arm %{buildroot}/usr/share/%{name}/ffmpeg_static
